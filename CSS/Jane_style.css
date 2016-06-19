@@ -2,20 +2,48 @@ body {
 	padding-top: 70px;
 }
 
+.logo {
+	height: 125px;
+	padding: 2%;
+}
+
 .container-width { /*restricting the width of the container*/
-	width: 80%;
+	width: 90%;
 }
 
 .image-container { /*adding margin and padding to images within container*/
 	margin: auto;
 	padding: 15px;
+	position: relative;
+	display: inline-block;
 }
 
+	.image-container .caption-box {
+	    background: white;
+	    height: 100%;
+	    width: 100%;
+	    opacity: 0;
+	    top: 0;
+	    left: 0;
+	    position: absolute;
+	    display: inline-block;
+	    padding: 0;
+	  }
+
+	  .caption-box:hover {
+	    opacity: .6;
+	    transition: opacity .9s;
+	    line-height: 250px;
+	    font-family: sans-serif;
+	    text-align: center;
+	    display: block;
+	    outline: 1px solid black;
+	  }
 /*temporary below!!!*/
 .text-center { /*temporary!!!*/
-	background: salmon;
+	/*background: salmon;*/
 }
 
 img { /*temporary!!!*/
-	outline: 1px solid black;
+	/*outline: 1px solid black;*/
 }
