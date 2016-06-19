@@ -1,0 +1,17 @@
+.container-width { /*restricting the width of the container*/
+	width: 80%;
+}
+
+.image-container { /*adding margin and padding to images within container*/
+	margin: auto;
+	padding: 15px;
+}
+
+/*temporary below!!!*/
+.text-center { /*temporary!!!*/
+	background: salmon;
+}
+
+img { /*temporary!!!*/
+	outline: 1px solid black;
+}
