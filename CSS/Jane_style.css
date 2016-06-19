@@ -1,3 +1,7 @@
+body {
+	padding-top: 70px;
+}
+
 .container-width { /*restricting the width of the container*/
 	width: 80%;
 }
