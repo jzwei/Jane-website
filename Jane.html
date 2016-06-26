@@ -4,39 +4,46 @@
   	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
   	<link href="css/navbar-fixed-side.css" rel="stylesheet"/>
   	<link rel="stylesheet" type="text/css" href="CSS/Jane_style.css">
-  	<script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<title>janemz</title>
 </head>
 <body>
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
-			<div id="navbar" class="navbar-collapse collapse">
-           		<ul class="nav navbar-nav navbar-right">
-           			<li class="active">
-           				<a href="">Home</a>
-           			</li>
-		           	<li class="dropdown">
-		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Illustrations <span class="caret"></span></a>
-		            	<ul class="dropdown-menu">
-							<li><a href="#">interiors</a></li>
-							<li><a href="#">fashion</a></li>
-							<li><a href="#">selfies</a></li>
-							<li><a href="#">people</a></li>
-							<li><a href="#">animals</a></li>
-							<li><a href="#">things</a></li>
-						</ul>
+			<a href="#" class="navbar-brand">jane m.z.</a>
+			<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="active" href="#">Home</a>
 					</li>
 					<li class="dropdown">
-		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Garments <span class="caret"></span></a>
+	            		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Illustrations <b class="caret"></b></a>
+			            	<ul class="dropdown-menu">
+								<li><a href="#">interiors</a></li>
+								<li><a href="#">fashion</a></li>
+								<li><a href="#">selfies</a></li>
+								<li><a href="#">people</a></li>
+								<li><a href="#">animals</a></li>
+								<li><a href="#">things</a></li>
+							</ul>
+					</li>
+					<li class="dropdown">
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Garments <b class="caret"></b></a>
 		            	<ul class="dropdown-menu">
 							<li><a href="#">dresses</a></li>
 							<li><a href="#">outerwear</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Polaroids <span class="caret"></span></a>
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Polaroids <b class="caret"></b></a>
 		            	<ul class="dropdown-menu">
 							<li><a href="#">Colorado</a></li>
 							<li><a href="#">New York</a></li>
@@ -45,8 +52,9 @@
 							<li><a href="#">India</a></li>
 							<li><a href="#">Philadelphia</a></li>
 						</ul>
+					</li>
 					<li class="dropdown">
-		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other things <span class="caret"></span></a>
+		            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other things <b class="caret"></b></a>
 		            	<ul class="dropdown-menu">
 							<li><a href="#">embroidery</a></li>
 							<li><a href="#">jewelry</a></li>
@@ -59,7 +67,7 @@
 						<a href="#store">Store</a>
 					</li>
 				</ul>
-	   		</div>
+			</div>
 	   	</div>
     </nav>
 	<div class="container-fluid container-width">
@@ -112,5 +120,10 @@
 			</div>
 		</div>
 	</div>
-</body>
+	<footer class="footer navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<a href="#" class="text-muted">back to top</a>
+		</div>
+	</footer>
+	</body>
 </html>
