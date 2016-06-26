@@ -1,8 +1,9 @@
-body {
+body { /*giving padding to the body top and bottom so it does not overlap navbar and footer*/
 	padding-top: 70px;
+	padding-bottom: 2.5em;
 }
 
-.logo {
+.logo { /*sizing the logo*/
 	height: 125px;
 	padding: 2%;
 }
@@ -39,6 +40,17 @@ body {
 	    display: block;
 	    outline: 1px solid black;
 	  }
+
+footer { /*giving height to the footer*/
+	height: 2.5em;
+}
+.center { /*vertically centers footer text*/
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width:100%;
+
 /*temporary below!!!*/
 .text-center { /*temporary!!!*/
 	/*background: salmon;*/
