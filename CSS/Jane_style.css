@@ -1,11 +1,23 @@
-body { /*giving padding to the body top and bottom so it does not overlap navbar and footer*/
-	padding-top: 70px;
+body { /*giving padding to the body top and bottom so it does not fall under navbar or footer*/
+	padding-top: 115px;
 	padding-bottom: 2.5em;
 }
 
-.logo { /*sizing the logo*/
-	height: 125px;
-	padding: 2%;
+.logo { /*sizing the fingers crossed linework logo in navbar*/
+		height: 105px;
+}
+
+.logo_name { /*sizing the jane m.z. logo*/
+	height: 75px;
+	margin: 5px;
+	/*padding-top: 2%;*/
+}
+
+.nav-vert-center { /*vertically centering the navigation links within the nav bar*/
+	padding-top: 25px;	
+}
+.nav-transparent { /*making the full navbar transparent*/
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .container-width { /*restricting the width of the container*/
@@ -19,6 +31,7 @@ body { /*giving padding to the body top and bottom so it does not overlap navbar
 	display: inline-block;
 }
 
+/*hover stuff*/
 	.image-container .caption-box {
 	    background: white;
 	    height: 100%;
@@ -31,31 +44,31 @@ body { /*giving padding to the body top and bottom so it does not overlap navbar
 	    padding: 0;
 	  }
 
-	  .caption-box:hover {
+	 .hover-link {
+		color: black;
+		font-weight: bold;
+		font-size: 2em;
+	  }
+
+	 .caption-box:hover {
 	    opacity: .6;
 	    transition: opacity .9s;
+
 	    line-height: 250px;
 	    font-family: sans-serif;
 	    text-align: center;
 	    display: block;
-	    outline: 1px solid black;
+	    /*outline: 1px solid black;*/
 	  }
+/*end hover stuff*/
 
 footer { /*giving height to the footer*/
 	height: 2.5em;
 }
-.center { /*vertically centers footer text*/
+
+.center { /*vertically centers text within footer and v-centering the nav logo*/
     margin: 0;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     width:100%;
-
-/*temporary below!!!*/
-.text-center { /*temporary!!!*/
-	/*background: salmon;*/
-}
-
-img { /*temporary!!!*/
-	/*outline: 1px solid black;*/
-}
