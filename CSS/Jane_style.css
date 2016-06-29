@@ -1,23 +1,27 @@
 body { /*giving padding to the body top and bottom so it does not fall under navbar or footer*/
-	padding-top: 115px;
+	padding-top: 75px;
 	padding-bottom: 2.5em;
+	background-color: salmon;
 }
 
-.logo { /*sizing the fingers crossed linework logo in navbar*/
-		height: 105px;
+.jmz_logo { /*sizing the jane m.z. navbar logo*/
+	height: 40px;
 }
-
-.logo_name { /*sizing the jane m.z. logo*/
-	height: 75px;
-	margin: 5px;
-	/*padding-top: 2%;*/
+.navbar_height { /*expanding navbar to fit jmz logo*/
+	height: auto;
 }
-
 .nav-vert-center { /*vertically centering the navigation links within the nav bar*/
-	padding-top: 25px;	
+	padding: 10px;	
 }
 .nav-transparent { /*making the full navbar transparent*/
 	background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.logo { /*sizing the header fingers crossed logo*/
+	height: 105px;
+	margin: 5px;
+	/*padding-top: 2%;*/
 }
 
 .container-width { /*restricting the width of the container*/
@@ -53,7 +57,6 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	 .caption-box:hover {
 	    opacity: .6;
 	    transition: opacity .9s;
-
 	    line-height: 250px;
 	    font-family: sans-serif;
 	    text-align: center;
@@ -65,8 +68,7 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 footer { /*giving height to the footer*/
 	height: 2.5em;
 }
-
-.center { /*vertically centers text within footer and v-centering the nav logo*/
+.center { /*vertically centers text within footer*/
     margin: 0;
     position: absolute;
     top: 50%;
