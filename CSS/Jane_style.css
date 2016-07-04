@@ -3,23 +3,32 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	padding-bottom: 2.5em;
 }
 
-.jmz_logo { /*sizing the jane m.z. navbar logo*/
-	height: 40px;
-}
-.navbar_height { /*expanding navbar to fit jmz logo*/
-	height: auto;
-}
 .nav-vert-center { /*vertically centering the navigation links within the nav bar*/
-	padding: 10px;	
+	padding: 10px;
 }
+
+.nav-font-size { /*font size within navigation bar*/
+	font-size: .9em;
+}
+
 .nav-transparent { /*making the full navbar and footer transparent*/
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-.logo { /*sizing the header fingers crossed logo*/
-	height: 105px;
-	margin: 5px;
+#fingers_logo { /*sizing the header fingers crossed logo*/
+	height: 145px;
+	margin: 15px;
 	/*padding-top: 2%;*/
+}
+
+#mobile-logo { /*sizing the mobile logo*/
+	width: 15px;
+}
+
+@media (min-width: 768px) { /*sizing the mobile logo for tablet*/
+	#mobile-logo {
+		width: 20px;
+	}
 }
 
 .container-width { /*restricting the width of the container*/
@@ -33,7 +42,7 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	display: inline-block;
 }
 
-/*hover stuff*/
+/*hover stuff*/ /*REMINDER FOR MOBILE REMOVE HOVER AND ADD TRANSPARENT BANNER LINK*/
 	.image-container .caption-box {
 	    background: white;
 	    height: 100%;
