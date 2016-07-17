@@ -75,9 +75,34 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 footer { /*giving height to the footer*/
 	height: 2.5em;
 }
+
 .center { /*vertically centers text within footer*/
     margin: 0;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     width:100%;
+}
+
+/*illustrations page*/
+
+h3 {
+	text-align: center;
+}
+h4 {
+	text-align: center;
+}
+
+a:link {
+	color: black;
+}
+a:visited {
+	color: grey;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: underline;
+}
+
