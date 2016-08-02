@@ -43,7 +43,7 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 }
 
 /*hover stuff*/ /*REMINDER FOR MOBILE REMOVE HOVER AND ADD TRANSPARENT BANNER LINK*/
-	.image-container .caption-box {
+	.caption-box {
 	    background: white;
 	    height: 100%;
 	    width: 100%;
@@ -62,7 +62,7 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	  }
 
 	 .caption-box:hover {
-	    opacity: .6;
+	    opacity: .7;
 	    transition: opacity .9s;
 	    line-height: 250px;
 	    font-family: sans-serif;
@@ -70,6 +70,17 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	    display: block;
 	    /*outline: 1px solid black;*/
 	  }
+
+	  /*7/28*/
+	  /*.image-hover:hover {
+	  	opacity: .6;
+	  	transition: opacity .9s;
+	  }
+	  .hover-link:hover {
+	  	opacity: 1;
+	  }*/
+
+
 /*end hover stuff*/
 
 footer { /*giving height to the footer*/
