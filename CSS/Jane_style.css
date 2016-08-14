@@ -122,7 +122,12 @@ a:active {
 
 /*about page*/
 
-.col-center {
+.col-center {  /*centering the content within the column*/
 	margin: auto;
 }
+
+ul {
+	color: grey;
+}
+
 
