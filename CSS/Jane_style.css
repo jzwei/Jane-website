@@ -76,11 +76,9 @@ hr.line-break { /*gradient line break between sections*/
 	 .caption-box:hover {
 	    opacity: .7;
 	    transition: opacity .9s;
-	    line-height: 250px;
-	    /*font-family: sans-serif;*/
+	    line-height: 290px;
 	    text-align: center;
 	    display: block;
-	    /*outline: 1px solid black;*/
 	  }
 
 	  /*7/28*/
