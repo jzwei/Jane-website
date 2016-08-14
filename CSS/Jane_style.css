@@ -126,8 +126,18 @@ a:active {
 	margin: auto;
 }
 
-ul {
+.grey-text {  /*making bullet-point text grey*/
 	color: grey;
 }
 
+.align-left { /*aligning text left*/
+	text-align: left;
+}
 
+.form-outline { /*adding an outline to about sections*/
+	outline: 1pt solid lightgrey;
+}
+
+#email {
+	text-align: center;
+}
