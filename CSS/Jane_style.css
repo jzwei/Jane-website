@@ -3,6 +3,10 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	padding-bottom: 2.5em;
 }
 
+.font {
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	}
+
 .nav-vert-center { /*vertically centering the navigation links within the nav bar*/
 	padding: 10px;
 }
@@ -65,7 +69,7 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	    opacity: .7;
 	    transition: opacity .9s;
 	    line-height: 250px;
-	    font-family: sans-serif;
+	    /*font-family: sans-serif;*/
 	    text-align: center;
 	    display: block;
 	    /*outline: 1px solid black;*/
@@ -111,10 +115,11 @@ a:link {
 	color: black;
 }
 a:visited {
-	color: grey;
+	color: d#333;
 }
 a:hover {
 	text-decoration: underline;
+	color: #ef0498;
 }
 a:active {
 	text-decoration: underline;
