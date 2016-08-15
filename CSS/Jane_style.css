@@ -131,6 +131,21 @@ a:active {
 	text-decoration: underline;
 }
 
+.hidden-link:link {
+	color: grey;
+}
+.hidden-link:visited {
+	color: grey;
+}
+.hidden-link:hover {
+	color: grey;
+	text-decoration: none;
+}
+.hidden-link:active {
+	color: grey;
+}
+
+
 /*about page*/
 
 .col-center {  /*centering the content within the column*/
