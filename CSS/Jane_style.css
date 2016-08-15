@@ -54,6 +54,9 @@ hr.line-break { /*gradient line break between sections*/
   background-image: -webkit-linear-gradient(left, #FFFFFF, #eee, #FFFFFF);
 }
 
+.grey-text {  /*making text grey*/
+	color: grey;
+}
 /*hover stuff*/ /*REMINDER FOR MOBILE REMOVE HOVER AND ADD TRANSPARENT BANNER LINK*/
 	.caption-box {
 	    background: white;
@@ -160,10 +163,6 @@ a:active {
 	padding-bottom: 3px;
 }
 
-.grey-text {  /*making text grey*/
-	color: grey;
-}
-
 .align-left { /*aligning text left*/
 	text-align: left;
 }
@@ -174,4 +173,8 @@ a:active {
 
 #email { /*center aligning email address*/
 	text-align: center;
+}
+
+.bold {
+	font-weight: 700;
 }
