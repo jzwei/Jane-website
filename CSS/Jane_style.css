@@ -100,7 +100,7 @@ hr.line-break { /*gradient line break between sections*/
 	    position: absolute;
 	    bottom: 0;
 	    text-align: center;
-	    font-size: 2em;
+	    font-size: 1.5em;
 	}
 
 	.link-vert-center { /*vertically centering the mobile link over its container*/
