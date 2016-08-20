@@ -3,6 +3,12 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	padding-bottom: 2.5em;
 }
 
+hr.line-break { /*gradient line break between sections*/
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #FFFFFF, #eee, #FFFFFF);
+}
+
 /*text styling*/
 	.font {
 		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -69,22 +75,18 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	}
 /*logo stuff ENDS*/
 
-.container-width { /*restricting the width of the container*/
-	width: 90%;
-}
+/*container styles*/
+	.container-width { /*restricting the width of the container*/
+		width: 90%;
+	}
 
-.image-container { /*adding margin and padding to images within container*/
-	margin: auto;
-	padding: 15px;
-	position: relative;
-	display: inline-block;
-}
-
-hr.line-break { /*gradient line break between sections*/
-  border: 0; 
-  height: 1px; 
-  background-image: -webkit-linear-gradient(left, #FFFFFF, #eee, #FFFFFF);
-}
+	.image-container { /*adding margin and padding to images within container*/
+		margin: auto;
+		padding: 15px;
+		position: relative;
+		display: inline-block;
+	}
+/*container styles END*/
 
 /*hover stuff*/
 	.caption-box {
@@ -161,6 +163,7 @@ hr.line-break { /*gradient line break between sections*/
 		text-decoration: underline;
 	}
 
+	/*hidden links...*/
 	.hidden-link:link {
 		color: grey;
 	}
