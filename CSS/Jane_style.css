@@ -88,7 +88,6 @@ hr.line-break { /*gradient line break between sections*/
 	    text-align: center;
 	    display: block;
 	  }
-
 /*end hover stuff*/
 
 /*mobile index page image links*/
@@ -114,7 +113,7 @@ footer { /*giving height to the footer*/
 	height: 2.5em;
 }
 
-.center { /*vertically centers text within footer*/
+.footer-center { /*vertically centers text within footer*/
     margin: 0;
     position: absolute;
     top: 50%;
