@@ -3,17 +3,40 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	padding-bottom: 2.5em;
 }
 
-.font {
+/*text styling*/
+	.font {
 		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
+	}
 
-.grey-text {  /*making text grey*/
-	color: grey;
-}
+	.grey-text {  /*making text grey*/
+		color: grey;
+	}
 
-.black-text {  /*making text grey*/
-	color: black;
-}
+	.black-text {  /*making text grey*/
+		color: black;
+	}
+	.align-left { /*aligning text left*/
+		text-align: left;
+	}
+
+	.align-center { /*aligning text center*/
+		text-align: center;
+	}
+	.bold {
+		font-weight: 700;
+	}
+	/*heading styling*/
+	h3 {
+		text-align: center;
+	}
+	h4 {
+		text-align: center;
+	}
+	h5 {
+		text-align: center;
+	}
+	/*heading styling ENDS*/
+/*text styling ENDS*/
 
 /*NAVIGATION BAR*/
 	.nav-vert-center { /*vertically centering the navigation links within the nav bar*/
@@ -44,6 +67,7 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 			width: 20px;
 		}
 	}
+/*logo stuff ENDS*/
 
 .container-width { /*restricting the width of the container*/
 	width: 90%;
@@ -89,7 +113,6 @@ hr.line-break { /*gradient line break between sections*/
 	    display: block;
 	  }
 /*end hover stuff*/
-
 /*mobile index page image links*/
 	.mobile-caption-box { /*instead of hover on xs making link always visible*/
 		background: white;
@@ -109,61 +132,51 @@ hr.line-break { /*gradient line break between sections*/
 	}
 /*mobile index link style ENDS*/
 
-footer { /*giving height to the footer*/
-	height: 2.5em;
-}
+/*footer styling*/
+	footer { /*giving height to the footer*/
+		height: 2.5em;
+	}
 
-.footer-center { /*vertically centers text within footer*/
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width:100%;
-}
+	.footer-center { /*vertically centers text within footer*/
+	    margin: 0;
+	    position: absolute;
+	    top: 50%;
+	    transform: translate(0, -50%);
+	    width:100%;
+	}
+/*footer styling ENDS*/
 
-/*illustrations page*/
+/*LINK STYLING*/
+	a:link {
+		color: black;
+	}
+	a:visited {
+		color: d#333;
+	}
+	a:hover {
+		text-decoration: underline;
+		color: #ef0498;
+	}
+	a:active {
+		text-decoration: underline;
+	}
 
-h3 {
-	text-align: center;
-}
-h4 {
-	text-align: center;
-}
-h5 {
-	text-align: center;
-}
-
-a:link {
-	color: black;
-}
-a:visited {
-	color: d#333;
-}
-a:hover {
-	text-decoration: underline;
-	color: #ef0498;
-}
-a:active {
-	text-decoration: underline;
-}
-
-.hidden-link:link {
-	color: grey;
-}
-.hidden-link:visited {
-	color: grey;
-}
-.hidden-link:hover {
-	color: grey;
-	text-decoration: none;
-}
-.hidden-link:active {
-	color: grey;
-}
-
+	.hidden-link:link {
+		color: grey;
+	}
+	.hidden-link:visited {
+		color: grey;
+	}
+	.hidden-link:hover {
+		color: grey;
+		text-decoration: none;
+	}
+	.hidden-link:active {
+		color: grey;
+	}
+/*LINK STYLING ENDS*/
 
 /*about page*/
-
 .col-center {  /*centering the content within the column*/
 	margin: auto;
 }
@@ -176,22 +189,7 @@ a:active {
 	padding-bottom: 3px;
 }
 
-.align-left { /*aligning text left*/
-	text-align: left;
-}
-
-.align-center { /*aligning text center*/
-	text-align: center;
-}
-
-.form-outline { /*adding an outline to about sections*/
-	outline: 1pt solid lightgrey;
-}
-
 #email { /*center aligning email address*/
 	text-align: center;
 }
 
-.bold {
-	font-weight: 700;
-}
