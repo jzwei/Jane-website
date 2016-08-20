@@ -166,6 +166,9 @@ a:active {
 .align-left { /*aligning text left*/
 	text-align: left;
 }
+.align-center { /*aligning text center*/
+	text-align: center;
+}
 
 .form-outline { /*adding an outline to about sections*/
 	outline: 1pt solid lightgrey;
