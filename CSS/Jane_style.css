@@ -5,7 +5,11 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 
 .font {
 		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	}
+}
+
+.grey-text {  /*making text grey*/
+	color: grey;
+}
 
 /*NAVIGATION BAR*/
 	.nav-vert-center { /*vertically centering the navigation links within the nav bar*/
@@ -54,9 +58,6 @@ hr.line-break { /*gradient line break between sections*/
   background-image: -webkit-linear-gradient(left, #FFFFFF, #eee, #FFFFFF);
 }
 
-.grey-text {  /*making text grey*/
-	color: grey;
-}
 /*hover stuff*/ /*REMINDER FOR MOBILE REMOVE HOVER AND ADD TRANSPARENT BANNER LINK*/
 	.caption-box {
 	    background: white;
@@ -166,6 +167,7 @@ a:active {
 .align-left { /*aligning text left*/
 	text-align: left;
 }
+
 .align-center { /*aligning text center*/
 	text-align: center;
 }
