@@ -97,6 +97,24 @@ hr.line-break { /*gradient line break between sections*/
 
 /*end hover stuff*/
 
+/*mobile index page image links*/
+	.mobile-caption-box {
+		background: white;
+		opacity: .7;
+	    height: 25%;
+	    width: 100%;
+	    position: absolute;
+	    bottom: 0;
+	    text-align: center;
+	}
+
+	.vert-center {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+	}
+/*mobile index link style ENDS*/
+
 footer { /*giving height to the footer*/
 	height: 2.5em;
 }
