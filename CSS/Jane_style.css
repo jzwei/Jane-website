@@ -11,6 +11,10 @@ body { /*giving padding to the body top and bottom so it does not fall under nav
 	color: grey;
 }
 
+.black-text {  /*making text grey*/
+	color: black;
+}
+
 /*NAVIGATION BAR*/
 	.nav-vert-center { /*vertically centering the navigation links within the nav bar*/
 		padding: 10px;
@@ -58,7 +62,7 @@ hr.line-break { /*gradient line break between sections*/
   background-image: -webkit-linear-gradient(left, #FFFFFF, #eee, #FFFFFF);
 }
 
-/*hover stuff*/ /*REMINDER FOR MOBILE REMOVE HOVER AND ADD TRANSPARENT BANNER LINK*/
+/*hover stuff*/
 	.caption-box {
 	    background: white;
 	    height: 100%;
@@ -85,20 +89,10 @@ hr.line-break { /*gradient line break between sections*/
 	    display: block;
 	  }
 
-	  /*7/28*/
-	  /*.image-hover:hover {
-	  	opacity: .6;
-	  	transition: opacity .9s;
-	  }
-	  .hover-link:hover {
-	  	opacity: 1;
-	  }*/
-
-
 /*end hover stuff*/
 
 /*mobile index page image links*/
-	.mobile-caption-box {
+	.mobile-caption-box { /*instead of hover on xs making link always visible*/
 		background: white;
 		opacity: .7;
 	    height: 25%;
@@ -106,9 +100,10 @@ hr.line-break { /*gradient line break between sections*/
 	    position: absolute;
 	    bottom: 0;
 	    text-align: center;
+	    font-size: 2em;
 	}
 
-	.vert-center {
+	.link-vert-center { /*vertically centering the mobile link over its container*/
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50%;
