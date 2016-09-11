@@ -112,7 +112,6 @@ hr.line-break { /*gradient line break between sections*/
 	    transition: opacity .9s;
 	    line-height: 290px;
 	    text-align: center;
-	    display: block;
 	  }
 /*end hover stuff*/
 /*mobile index page image links*/
@@ -124,12 +123,12 @@ hr.line-break { /*gradient line break between sections*/
 	    position: absolute;
 	    bottom: 0;
 	    text-align: center;
-	    font-size: 1.5em;
+	    font-size: 1em;
 	}
 
 	.link-vert-center { /*vertically centering the mobile link over its container*/
 		position: absolute;
-		transform: translate(-50%, -50%);
+		transform: translate(-70%, -50%);
 		top: 50%;
 	}
 /*mobile index link style ENDS*/
