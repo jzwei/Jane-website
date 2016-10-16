@@ -194,4 +194,7 @@ hr.line-break { /*gradient line break between sections*/
 #email { /*center aligning email address*/
 	text-align: center;
 }
+.linkedin { /*center aligning linkedin address*/
+	text-align: center;
+}
 
