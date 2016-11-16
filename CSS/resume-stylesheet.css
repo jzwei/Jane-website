@@ -1,0 +1,206 @@
+/*NAVIGATION BAR*/
+	.nav-vert-center { /*vertically centering the navigation links within the nav bar*/
+		padding: 10px;
+	}
+
+	.nav-font-size { /*font size within navigation bar*/
+		font-size: .9em;
+	}
+
+	.nav-transparent { /*making the full navbar and footer transparent*/
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+
+/*LOGOS*/
+	#fingers_logo { /*sizing the header fingers crossed logo*/
+		height: 145px;
+		margin: 15px;
+		/*padding-top: 2%;*/
+	}
+
+	#mobile-logo { /*sizing the mobile logo*/
+		width: 15px;
+	}
+
+	@media (min-width: 768px) { /*sizing the mobile logo for tablet*/
+		#mobile-logo {
+			width: 20px;
+		}
+	}
+/*logo stuff ENDS*/
+
+/*MAIN CONTENT BELOW*/
+	body {
+		padding-bottom: 50px; /*padding to end before footer*/
+	}
+
+	.jumbo-pad-top { /*padding so jumbotron begins below nav-bar*/
+		margin-top: 20px;
+	}
+
+	.background-color { /*jumbotron text background color*/
+		background-color: white;
+		opacity: 
+	}
+
+	.center { /*jumbotron text center alignment*/
+		text-align: center;
+		width: 55%;
+	}
+
+	.img-circle { /*jumbotron photo circle*/
+		shape-outside: circle(50%);
+		max-width: 200px;
+		margin-top: 15px;
+	}
+
+	#background-wrapper{ /*RESPONSIVE JUMBOTRON BACKGROUND IMAGE*/
+		background-image: url('images/interiors.jpg');
+		background-size: cover;
+	}
+
+	.border {
+		border: 10px; /*adding small border to main content div*/
+	}
+
+	.font { /*font for entire page*/
+		font-family: 'Poppins', sans-serif;
+		color: grey;
+	}
+
+/*Headline stuff*/
+	.font-black { /*black font for headlines*/
+		color: black;
+	}
+	h1 {
+		font-weight: normal;
+		color: black;
+		margin-top: 10px;
+	}
+	h2 {
+		color: black;
+		margin-top: 10px;
+	}
+	h3 {
+		color: black;
+		margin-top: 10px;
+	}
+	.bold {
+		font-weight: bold;
+	}
+	.underline {
+		text-decoration: underline;
+	}
+	.description {
+		color: grey;
+	}
+	.workplace {
+		color: black;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-weight: bolder;
+	}
+	.timeframe {
+		float: right;
+	}
+	.jobtitle {
+		color: black;
+		font-weight: bold;
+		color:black;
+		font-size: 1.2em;
+	}
+	.awards{
+		font-weight: bold;
+	}
+	.hidden-sm-up {
+		visibility: hidden;
+	}
+
+/*BUTTON STUFF*/
+	/*.btn-color {
+		background-color: grey;
+		border-color: white;
+		font-weight: 300;
+	}
+
+	.btn-primary:hover {
+	    color: #fff;
+	    background-color: grey;
+	    border-color: white;
+	}
+	.btn.focus, .btn:focus, .btn:hover {
+	    color: pink;
+	    text-decoration: none;
+	}
+	a:focus, a:hover {
+	    color: pink;
+	    text-decoration: underline;
+	}
+	a:active, a:hover {
+	    outline: 0;
+	}*/
+
+/*LINK STYLING*/
+	a:link {
+		color: black;
+	}
+	a:visited {
+		color: #333;
+	}
+	a:hover {
+		text-decoration: underline;
+		color: #ef0498;
+	}
+	a:active {
+		text-decoration: underline;
+	}
+/*hidden links...*/
+	.hidden-link:link {
+		color: black;
+	}
+	.hidden-link:visited {
+		color: black;
+	}
+	.hidden-link:hover {
+		color: black;
+		text-decoration: none;
+	}
+	.hidden-link:active {
+		color: black;
+		text-decoration: none;
+	}
+
+footer { /*footer text left alignment*/
+	margin-left: 10px;
+}
+
+/*FOR MOBILE*/
+@media (max-width: 767px) {
+	.container-sm  {
+		margin: 10px;
+	}
+	.jumbotron .container h1 {
+	font-size: 25px;
+	}
+	.jumbotron .container p {
+	font-size: 16px;
+	}
+	h3 {
+	font-size: 16px;
+	}
+	.jobtitle {
+	font-size: 15px;
+	}
+	.timeframe {
+		float: none;
+	}
+	.img-circle {
+		max-width: 155px;
+	}
+	.jumbo-pad-top {
+	margin-top: 0;
+	}
+	.hidden-sm-up {
+		visibility: visible;
+	}
+}
