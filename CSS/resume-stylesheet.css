@@ -83,7 +83,7 @@
 	}
 	h3 {
 		color: black;
-		margin-top: 10px;
+		margin-top: 25px;
 	}
 	.bold {
 		font-weight: bold;
@@ -93,6 +93,7 @@
 	}
 	.description {
 		color: grey;
+		margin-left: 10px;
 	}
 	.workplace {
 		color: black;
@@ -169,7 +170,9 @@
 		color: black;
 		text-decoration: none;
 	}
-
+	.grey-text: {
+		color: grey;
+	}
 footer { /*footer text left alignment*/
 	margin-left: 10px;
 }
