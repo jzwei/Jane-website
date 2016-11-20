@@ -21,6 +21,22 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+    jQuery(function($) {
+    $('.navbar .dropdown').hover(function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+
+    }, function() {
+    $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+
+    });
+
+    $('.navbar .dropdown > a').click(function(){
+    location.href = this.href;
+    });
+
+    });
+  </script>
+    <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -50,6 +66,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      
       <div class="collapse navbar-collapse navHeaderCollapse nav-font-size">
         <ul class="nav navbar-nav navbar-right nav-vert-center ">
     <!--illustrations links-->
