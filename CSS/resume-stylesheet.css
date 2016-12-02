@@ -164,7 +164,7 @@
 	}
 	.hidden-link:hover {
 		color: black;
-		text-decoration: none;
+		text-decoration: underline;
 	}
 	.hidden-link:active {
 		color: black;
