@@ -191,10 +191,31 @@ hr.line-break { /*gradient line break between sections*/
 	padding-bottom: 3px;
 }
 
-#email { /*center aligning email address*/
+.send-btn {
+	background-color: #a1eaed;
+	border-color: #a1eaed;
+	font-family: 'Petit Formal Script', cursive;
+	font-size: 1.5em;
+}
+.send-btn:hover {
+	background-color: #b5fcff;
+	border-color: #b5fcff;
+	text-decoration: underline;
+	font-style: italic;
+}
+.contact-img {
+	max-width: 80px;
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+
+/*OLD CONTACT*/
+email { /*center aligning email address*/
 	text-align: center;
 }
-.linkedin { /*center aligning linkedin address*/
+linkedin { /*center aligning linkedin address*/
 	text-align: center;
 }
 
