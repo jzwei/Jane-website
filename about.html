@@ -155,8 +155,51 @@
 		<div class="container container-width">
 			<div class="col-xs-12 col-sm-8 col-sm-offset-2 form-outline">
 				<h4 class="align-left grey-text"><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4>
-				<form action="https://formspree.io/jzweibel@gmail.com" method="POST">
+				<!-- <form action="https://formspree.io/jzweibel@gmail.com" method="POST"> -->
+
+				<form name="gform" id="gform" enctype="https://docs.google.com/forms/d/e/1FAIpQLSd1ePbfi7Xxw6UUJIHWqJ5iHjcxZJ6hg6V2KiyDtf8F1aeEPA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+				<div class="form-group">
+						<label for="name" class="control-label">Name</label>
+						<div class="">
+							<input type="text" class="form-control" id="entry.635242114" name="entry.635242114" placeholder="First & Last Name" value="">
+						</div>
+					</div>
+
 					<div class="form-group">
+						<label for="email" class="control-label">Email</label>
+						<div class="">
+							<input type="email" class="form-control" id="entry.1984187955" name="entry.1984187955" placeholder="example@domain.com" value="">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="subject" class="control-label">Subject</label>
+						<div class="">
+							<input type="subject" class="form-control" id="entry.329031853" name="entry.329031853" placeholder="subject" value="">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="message" class="control-label">Message</label>
+						<div class="">
+							<textarea class="form-control" rows="6" id="entry.955148339" name="entry.955148339" placeholder="Dearest Jane..."></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div">
+							<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
+						</div>
+					</div>
+					<script src="assets/js/jquery.min.js"></script>
+					<script type="text/javascript">var submitted=false;</script>
+					<script type="text/javascript">
+					$('#gform').on('submit', function(e) {
+					  $('#gform *').fadeOut(2000);
+					  $('#gform').prepend('Your submission has been processed...');
+					  });
+					</script>
+
+
+
+					<!-- <div class="form-group">
 						<label for="name" class="control-label">Name</label>
 						<div class="">
 							<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
@@ -185,7 +228,7 @@
 						<div">
 							<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
 						</div>
-					</div>
+					</div> -->
 				</form>
 			</div>
 		</div>
