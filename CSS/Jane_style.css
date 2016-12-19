@@ -179,41 +179,42 @@ hr.line-break { /*gradient line break between sections*/
 /*LINK STYLING ENDS*/
 
 /*about page*/
-.col-center {  /*centering the content within the column*/
-	margin: auto;
-}
+	.col-center {  /*centering the content within the column*/
+		margin: auto;
+	}
 
-.top-pad {
-	padding-top: 3px;
-}
+	.top-pad {
+		padding-top: 3px;
+	}
 
-.bottom-pad {
-	padding-bottom: 3px;
-}
+	.bottom-pad {
+		padding-bottom: 3px;
+	}
 
-.send-btn {
-	background-color: #a1eaed;
-	border-color: #a1eaed;
-	font-family: 'Petit Formal Script', cursive;
-	font-size: 1.5em;
-}
-.send-btn:hover {
-	background-color: #b5fcff;
-	border-color: #b5fcff;
-	text-decoration: underline;
-	font-style: italic;
-}
-.contact-img {
-	max-width: 80px;
-}
+/*Contact form stuff*/
+	.send-btn {
+		background-color: #a1eaed;
+		border-color: #a1eaed;
+		font-family: 'Petit Formal Script', cursive;
+		font-size: 1.5em;
+	}
+	.send-btn:hover {
+		background-color: #b5fcff;
+		border-color: #b5fcff;
+		text-decoration: underline;
+		font-style: italic;
+	}
+	.contact-img {
+		max-width: 80px;
+	}
 
-::-webkit-input-placeholder {
-   font-style: italic;
-}
+	::-webkit-input-placeholder {
+	   font-style: italic;
+	}
 
-#gform {
-	color: #a1eaed;
-}
+	#gform {
+		color: #a1eaed;
+	}
 
 /*OLD CONTACT*/
 email { /*center aligning email address*/
