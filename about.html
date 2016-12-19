@@ -157,7 +157,7 @@
 				<h4 class="align-left grey-text"><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4>
 				<!-- <form action="https://formspree.io/jzweibel@gmail.com" method="POST"> -->
 
-				<form name="gform" id="gform" enctype="https://docs.google.com/forms/d/e/1FAIpQLSd1ePbfi7Xxw6UUJIHWqJ5iHjcxZJ6hg6V2KiyDtf8F1aeEPA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+				<form name="gform" id="gform" enctype="https://docs.google.com/forms/d/e/1FAIpQLSd1ePbfi7Xxw6UUJIHWqJ5iHjcxZJ6hg6V2KiyDtf8F1aeEPA/viewform?entry.635242114=First+%26+Last+Name&entry.1984187955=example@domain.com&entry.329031853=Subject&entry.955148339=Dearest+Jane..." target="hidden_iframe" onsubmit="submitted=true;">
 				<div class="form-group">
 						<label for="name" class="control-label">Name</label>
 						<div class="">
@@ -188,6 +188,7 @@
 							<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
 						</div>
 					</div>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 					<script src="assets/js/jquery.min.js"></script>
 					<script type="text/javascript">var submitted=false;</script>
 					<script type="text/javascript">
