@@ -138,105 +138,66 @@
 			</div>
 		</div>
 		<hr class="line-break">
-
-		<!-- OLD contact me -->
-		<!-- <div class="row top-pad bottom-pad">
-			<div class="top-pad bottom-pad">
-				<h4 class="grey-text">Contact me!</h4>
-				<p id="email" class="grey-text"><a href="mailto:jzweibel@gmail.com">jzweibel@gmail.com</a></p>
-				<div class="linkedin"><a href="https://www.linkedin.com/pub/jane-zweibel/49/184/49" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Jane Zweibel's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;Jane Zweibel</span></a></div>
-			</div>
-		</div> -->
 	
-
-
-
 	<!-- CONTACT FORM BELOW-->
 		<div class="container container-width">
 			<div class="col-xs-12 col-sm-8 col-sm-offset-2 form-outline">
-				<h4 class="align-left grey-text"><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4>
-				<!-- <form action="https://formspree.io/jzweibel@gmail.com" method="POST"> -->
-
-				<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1ePbfi7Xxw6UUJIHWqJ5iHjcxZJ6hg6V2KiyDtf8F1aeEPA/viewform?embedded=true#responses" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
-
 				<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd1ePbfi7Xxw6UUJIHWqJ5iHjcxZJ6hg6V2KiyDtf8F1aeEPA/formResponse?embedded=true" target="hidden_iframe" onsubmit="submitted=true;">
-				
-				<div class="form-group">
-						<label for="name" class="control-label">Name</label>
-						<div class="">
-							<input type="text" class="form-control" id="entry.635242114" name="entry.635242114" placeholder="First & Last Name" value="">
-						</div>
-					</div>
 
+					<h4 class="align-left grey-text"><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4>
+					
 					<div class="form-group">
-						<label for="email" class="control-label">Email</label>
-						<div class="">
-							<input type="email" class="form-control" id="entry.1984187955" name="entry.1984187955" placeholder="example@domain.com" value="">
+							<label for="name" class="control-label">Name</label>
+							<div class="">
+								<input type="text" class="form-control" id="entry.635242114" name="entry.635242114" placeholder="First & Last Name" value="">
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="subject" class="control-label">Subject</label>
-						<div class="">
-							<input type="subject" class="form-control" id="entry.329031853" name="entry.329031853" placeholder="subject" value="">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="message" class="control-label">Message</label>
-						<div class="">
-							<textarea class="form-control" rows="6" id="entry.955148339" name="entry.955148339" placeholder="Dearest Jane..."></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<div">
-							<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
-						</div>
-					</div>
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-					<script src="assets/js/jquery.min.js"></script>
-					<script type="text/javascript">var submitted=false;</script>
-					<script type="text/javascript">
-					$('#gform').on('submit', function(e) {
-					  $('#gform *').fadeOut(2000);
-					  $('#gform').prepend('Thank you for the message!');
-					  });
-					</script>
 
-
-
-					<!-- <div class="form-group">
-						<label for="name" class="control-label">Name</label>
-						<div class="">
-							<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+						<div class="form-group">
+							<label for="email" class="control-label">Email</label>
+							<div class="">
+								<input type="email" class="form-control" id="entry.1984187955" name="entry.1984187955" placeholder="example@something.com" value="">
+							</div>
 						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="email" class="control-label">Email</label>
-						<div class="">
-							<input type="email" class="form-control" id="email" name="email"placeholder="example@domain.com" value="">
+						<div class="form-group">
+							<label for="subject" class="control-label">Subject</label>
+							<div class="">
+								<input type="subject" class="form-control" id="entry.329031853" name="entry.329031853" placeholder="Subject" value="">
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="subject" class="control-label">Subject</label>
-						<div class="">
-							<input type="subject" class="form-control" id="subject" name="subject" placeholder="subject" value="">
+						<div class="form-group">
+							<label for="message" class="control-label">Message</label>
+							<div class="">
+								<textarea class="form-control" rows="6" id="entry.955148339" name="entry.955148339" placeholder="Dearest Jane..."></textarea>
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="message" class="control-label">Message</label>
-						<div class="">
-							<textarea class="form-control" rows="6" name="message" placeholder="Dearest Jane..."></textarea>
+						<div class="form-group">
+							<div">
+								<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<div">
-							<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
-						</div>
-					</div> -->
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+						<div class="red"><script src="assets/js/jquery.min.js"></script>
+						<script type="text/javascript">var submitted=false;</script>
+						<script type="text/javascript">
+						$('#gform').on('submit', function(e) {
+						  $('#gform *').fadeOut(2000);
+						  $('#gform').prepend('Message Submitted!');
+						  });
+						</script></div>
 				</form>
 			</div>
 		</div>
-		<!-- CONTACT FORM ENDS -->
+			<!-- CONTACT FORM ENDS -->
+
+					<!-- OLD contact me -->
+				<!-- <div class="row top-pad bottom-pad">
+					<div class="top-pad bottom-pad">
+						<h4 class="grey-text">Contact me!</h4>
+						<p id="email" class="grey-text"><a href="mailto:jzweibel@gmail.com">jzweibel@gmail.com</a></p>
+						<div class="linkedin"><a href="https://www.linkedin.com/pub/jane-zweibel/49/184/49" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Jane Zweibel's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;Jane Zweibel</span></a></div>
+					</div>
+				</div> -->
 	</div>
 	<footer class="footer navbar-default navbar-fixed-bottom nav-transparent">
 		<div class="container">

@@ -211,6 +211,10 @@ hr.line-break { /*gradient line break between sections*/
    font-style: italic;
 }
 
+#gform {
+	color: #a1eaed;
+}
+
 /*OLD CONTACT*/
 email { /*center aligning email address*/
 	text-align: center;
