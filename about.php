@@ -1,3 +1,45 @@
+<?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+		$from = 'Contact Form'; 
+		$to = 'jzweibel@gmail.com'; 
+		
+		$body = "From: $name\n E-Mail: $email\n Subject: $subject\n Message:\n $message";
+ 
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+		
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+
+		// Check if subject has been entered
+		if (!$_POST['subject']) {
+			$errSubject = 'Please enter the subject';
+		}
+
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message';
+		}
+ 
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errSubject && !$errMessage) {
+	if (mail ($to, $subject, $body, $from)) {
+		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+	} else {
+		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again!</div>';
+	}
+}
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,70 +178,66 @@
 					<li>I coded this website and made everything on it myself.</li>
 				</ul>
 			</div>
-		</div>
+		
 		<hr class="line-break">
 	
-	<!-- CONTACT FORM BELOW-->
-		<div class="container container-width">
-			<div class="row form-outline">
-				<form role="form" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd1ePbfi7Xxw6UUJIHWqJ5iHjcxZJ6hg6V2KiyDtf8F1aeEPA/formResponse?embedded=true" target="hidden_iframe" onsubmit="submitted=true;">
+<!-- CONTACT FORM BELOW-->
+		<div class="row form-outline col-md-8 col-md-offset-2">
+			<h4 class="align-left grey-text col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2"><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4>
 
-					<h4 class="align-left grey-text col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2"><img class="contact-img" src="images/logos/contact.jpg">Contact me!</h4>
-					
-						<div class="form-group col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-							<label for="name" class="control-label">Name</label>
-							<div class="">
-								<input type="text" class="form-control" id="entry.635242114" name="entry.635242114" placeholder="First & Last Name" value="">
-							</div>
-						</div>
+			<form class="form-horisontal" role="form" method="post" action="about.php">
 
-						<div class="form-group col-xs-12 col-sm-6 col-md-5 col-lg-4">
-							<label for="email" class="control-label">Email</label>
-							<div class="">
-								<input type="email" class="form-control" id="entry.1984187955" name="entry.1984187955" placeholder="example@something.com" value="">
-							</div>
-						</div>
-
-						<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-							<label for="subject" class="control-label">Subject</label>
-							<div class="">
-								<input type="subject" class="form-control" id="entry.329031853" name="entry.329031853" placeholder="Subject" value="">
-							</div>
-						</div>
-						<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-							<label for="message" class="control-label">Message</label>
-							<div class="">
-								<textarea class="form-control" rows="6" id="entry.955148339" name="entry.955148339" placeholder="Dearest Jane..."></textarea>
-							</div>
-						</div>
-						<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-							<div">
-								<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn">
-							</div>
-						</div>
-						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-						<div class="red"><script src="assets/js/jquery.min.js"></script>
-						<script type="text/javascript">var submitted=false;</script>
-						<script type="text/javascript">
-						$('#gform').on('submit', function(e) {
-						  $('#gform *').fadeOut(2000);
-						  $('#gform').prepend('Message Submitted!');
-						  });
-						</script></div>
-				</form>
-			</div>
-		</div>
-			<!-- CONTACT FORM ENDS -->
-
-					<!-- OLD contact me -->
-				<!-- <div class="row top-pad bottom-pad">
-					<div class="top-pad bottom-pad">
-						<h4 class="grey-text">Contact me!</h4>
-						<p id="email" class="grey-text"><a href="mailto:jzweibel@gmail.com">jzweibel@gmail.com</a></p>
-						<div class="linkedin"><a href="https://www.linkedin.com/pub/jane-zweibel/49/184/49" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Jane Zweibel's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;Jane Zweibel</span></a></div>
+				<div class="form-group col-xs-12 col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
+					<label for="name" class="control-label">Name</label>
+					<div class="">
+						<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+						<?php echo "<p class='text-danger'>$errName</p>";?>
 					</div>
-				</div> -->
+				</div>
+
+				<div class="form-group col-xs-12 col-sm-6 col-md-5 col-lg-4">
+					<label for="email" class="control-label">Email</label>
+					<div class="">
+						<input type="email" class="form-control" id="email" name="email" placeholder="example@something.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+						<?php echo "<p class='text-danger'>$errEmail</p>";?>
+					</div>
+				</div>
+
+				<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<label for="subject" class="control-label">Subject</label>
+					<div class="">
+						<input type="subject" class="form-control" id="subject" name="subject" placeholder="Subject" value="<?php echo htmlspecialchars($_POST['subject']); ?>">
+						<?php echo "<p class='text-danger'>$errSubject</p>";?>
+					</div>
+				</div>
+
+				<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<label for="message" class="control-label">Message</label>
+					<div class="">
+						<textarea class="form-control" rows="6" id="message" name="message" placeholder="Dearest Jane..."><?php echo htmlspecialchars($_POST['message']);?></textarea>
+						<?php echo "<p class='text-danger'>$errMessage</p>";?>
+					</div>
+				</div>
+
+				<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<div">
+						<input id="submit" name="submit" type="submit" value="Send!" class="btn btn-primary send-btn submit">
+					</div>
+				</div>
+
+				<div class="form-group col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<div>
+						<?php echo $result; ?>
+					</div>	
+				</div>
+			</form>
+			<script>$('#contactForm').submit(function () {
+			 sendContactForm();
+			 return false;
+			});</script>
+		</div>
 	</div>
+</div>
 	<footer class="footer navbar-default navbar-fixed-bottom nav-transparent">
 		<div class="container">
 			<div class="row footer-center">
