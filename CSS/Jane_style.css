@@ -56,7 +56,13 @@ hr.line-break { /*gradient line break between sections*/
 	.nav-transparent { /*making the full navbar and footer transparent*/
 		background-color: rgba(255, 255, 255, 0.9);
 	}
-	
+
+	:target:before { /*bumps the # link below the navbar*/
+		content:"";
+		display:block;
+		height:90px; /* fixed header height*/
+		margin:-90px 0 0; /* negative fixed header height */
+	}
 /*LOGOS*/
 	#fingers_logo { /*sizing the header fingers crossed logo*/
 		height: 145px;
