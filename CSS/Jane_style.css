@@ -123,8 +123,8 @@ hr.line-break { /*gradient line break between sections*/
 /*end hover stuff*/
 /*mobile index page image links*/
 	.mobile-caption-box { /*instead of hover on xs making link always visible*/
-		background: white;
-		opacity: .7;
+		background-color: rgba(255,255,255,0.7);
+	    opacity: 1;
 	    height: 25%;
 	    width: 100%;
 	    position: absolute;
