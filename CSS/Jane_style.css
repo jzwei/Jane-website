@@ -65,18 +65,18 @@ hr.line-break { /*gradient line break between sections*/
 	}
 /*LOGOS*/
 	#fingers_logo { /*sizing the header fingers crossed logo*/
-		height: 145px;
+		height: 105px;
 		margin: 15px;
 		/*padding-top: 2%;*/
 	}
 
 	#mobile-logo { /*sizing the mobile logo*/
-		width: 15px;
+		width: 20px;
 	}
 
 	@media (min-width: 768px) { /*sizing the mobile logo for tablet*/
 		#mobile-logo {
-			width: 20px;
+			width: 28px;
 		}
 	}
 /*logo stuff ENDS*/

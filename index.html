@@ -41,12 +41,12 @@
 		<div class="container container-width">
 
 		<!--logo for reg screens-->
-				<a class="navbar-brand hidden-xs hidden-sm" href="index.html">
-					<img class="brand-image nav-logo" src="images/logos/jmz_logo.svg" alt="jane m.z. logo">
-				</a> 
+				<a class="navbar-brand hidden-xs hidden-sm" href="index.html#">
+					<img class="brand-image nav-logo" src="images/logos/janemz_logo_open.svg" alt="jane m.z. logo" onmouseover="this.src='images/logos/janemz_logo_crossed.svg'" onmouseout="this.src='images/logos/janemz_logo_open.svg'"/>
+				</a>
 		<!--logo for med and small screens-->
 				<a class="navbar-brand hidden-md hidden-lg" href="index.html">
-					<img id="mobile-logo" class="brand-image" src="images/logos/logo.svg" alt="fingers crossed logo">
+					<img id="mobile-logo" class="avbar-brand hidden-md hidden-lg" src="images/logos/open.svg" alt="ingers crossed logo" onmouseover="this.src='images/logos/crossed.svg'" onmouseout="this.src='images/logos/open.svg'"/>
 				</a> 
 	
 			<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
@@ -120,7 +120,7 @@
 		<div class="row">
 			<div class="col-md-12 col-lg-12 hidden-xs hidden-sm">
 				<header class="text-center">
-					<img id="fingers_logo" src="images/logos/logo.svg">
+					<img id="fingers_logo" src="images/logos/open.svg" alt="jane m.z. logo" onmouseover="this.src='images/logos/crossed.svg'" onmouseout="this.src='images/logos/open.svg'"/>
 				</header>
 			</div>
 		</div>
@@ -138,6 +138,21 @@
 				<div class="hidden-md hidden-lg hidden-sm">
 					<div class="mobile-caption-box">
 						<a class="link-vert-center black-text" href="illustrations.html#self_illustrations">self illustrations</a>
+					</div>
+				</div>
+				<!-- only for xs mobile ENDS -->
+			</div>
+		
+		<!-- GLASS -->
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 image-container">
+				<img src="images/index/glass.jpg" class="img-responsive center-block" alt="Glass">
+				<div class="caption-box hidden-xs">
+					<a class="hover-link" href="glass.html">glass</a>
+				</div>
+				<!-- only for xs mobile below -->
+				<div class="hidden-md hidden-lg hidden-sm">
+					<div class="mobile-caption-box">
+						<a class="link-vert-center black-text" href="glass.html">glass</a>
 					</div>
 				</div>
 				<!-- only for xs mobile ENDS -->
@@ -263,21 +278,6 @@
 				<!-- only for xs mobile ENDS -->
 			</div>
 
-		<!-- GLASS -->
-			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 image-container">
-				<img src="images/index/glass.jpg" class="img-responsive center-block" alt="Glass">
-				<div class="caption-box hidden-xs">
-					<a class="hover-link" href="glass.html">glass</a>
-				</div>
-				<!-- only for xs mobile below -->
-				<div class="hidden-md hidden-lg hidden-sm">
-					<div class="mobile-caption-box">
-						<a class="link-vert-center black-text" href="glass.html">glass</a>
-					</div>
-				</div>
-				<!-- only for xs mobile ENDS -->
-			</div>
-
 		<!-- ANIMAL ILLUSTRATIONS -->
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 image-container">
 				<img src="images/index/animal_illustrations.jpg" class="img-responsive center-block" alt="Animal illustrations">
@@ -292,7 +292,8 @@
 				</div>
 				<!-- only for xs mobile ENDS -->
 			</div>
-			<!-- ABOUT -->
+		
+		<!-- ABOUT -->
 			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 image-container">
 				<img src="images/index/jane_about.jpg" class="img-responsive center-block" alt="Intro image">
 				<div class="caption-box hidden-xs">
