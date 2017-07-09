@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'script-font';
+    src: url(webfont.ttf);
+  }
+
 body { /*giving padding to the body top and bottom so it does not fall under navbar or footer*/
 	padding-top: 75px;
 	padding-bottom: 2.5em;
@@ -111,6 +116,7 @@ hr.line-break { /*gradient line break between sections*/
 		color: black;
 		font-weight: bold;
 		font-size: 2em;
+		font-family: script-font;
 	  }
 
 	 .caption-box:hover {
