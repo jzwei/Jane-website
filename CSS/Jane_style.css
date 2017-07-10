@@ -69,6 +69,10 @@ hr.line-break { /*gradient line break between sections*/
 		margin:-90px 0 0; /* negative fixed header height */
 	}
 /*LOGOS*/
+	.navbar-brand {
+		padding: 20px 15px;
+	}
+
 	#fingers_logo { /*sizing the header fingers crossed logo*/
 		height: 105px;
 		margin: 15px;
@@ -76,12 +80,16 @@ hr.line-break { /*gradient line break between sections*/
 	}
 
 	#mobile-logo { /*sizing the mobile logo*/
-		width: 20px;
+		width: 55px;
+   		transform: translateY(-40%);
 	}
 
 	@media (min-width: 768px) { /*sizing the mobile logo for tablet*/
 		#mobile-logo {
-			width: 28px;
+	   		width: 65px;
+			transform: translateY(-20%);
+			}
+
 		}
 	}
 /*logo stuff ENDS*/
